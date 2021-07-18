@@ -1,0 +1,44 @@
+.buttons {
+    margin-top: 15px;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+@keyframes pulsate-bck {
+    0% {
+        box-shadow: 0 0 5px var(--brightBlue);
+    }
+    50% {
+        box-shadow: 0 0 12px 2px var(--brightBlue);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--brightBlue);
+    }
+}
+
+.buttons button{
+    width: 65px;
+    margin: 5px 8px;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.0);
+    outline: none;
+    color: var(--brightBlue);
+    border: 2px solid var(--brightBlue);
+    font-size: 22px;
+    box-shadow: 0 0 5px var(--brightBlue);
+}
+
+.buttons button:hover{
+    animation: pulsate-bck 1s ease-in-out infinite both;
+}
+
+.buttons button:active{
+    background-color: var(--brightBlue);
+    color: rgb(0, 0, 0);
+}
