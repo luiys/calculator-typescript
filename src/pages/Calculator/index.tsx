@@ -22,8 +22,7 @@ const Calculator: React.FC = () => {
             return evalResponse !== undefined ? setDisplayValue(evalResponse) :  setDisplayValue(displayRef.current.value)
         }
         if(value === "C"){
-            setDisplayValue("")
-            return
+            return setDisplayValue("")
         }
         displayRef.current && setDisplayValue(write(displayRef.current.value, value))
     }

@@ -26,4 +26,6 @@
     outline: none;
     box-shadow: 0 0 10px var(--brightBlue);
     animation: pulsate-bck 4s ease-in-out infinite both;
+    padding-left: 10px;
+    padding-top: 5px;
 }
